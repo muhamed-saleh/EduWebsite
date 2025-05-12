@@ -72,7 +72,7 @@ namespace EduWebsite.Controllers
         public async Task<IActionResult> CreateExam([FromBody] ExamDto exam)
         {
             if (exam == null)
-            {
+            { 
                 return BadRequest("Exam data is null");
             }
             await services.Create(exam);
